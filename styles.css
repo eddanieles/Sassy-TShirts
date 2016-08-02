@@ -12,7 +12,8 @@
   margin-bottom: 0; }
 
 .shirt_image {
-  flex-grow: 10; }
+  flex-grow: 10;
+  margin: auto; }
   .shirt_image img {
     padding: 20px;
     width: 80%; }
@@ -56,7 +57,8 @@
     .shirt_menu .submenu li {
       border-bottom: 3px solid #1F56A9; }
       .shirt_menu .submenu li:hover {
-        font-size: 150%; }
+        font-size: 150%;
+        background-color: #1F56A9; }
 
 @media screen and (min-width: 750px) {
   body {
@@ -78,11 +80,14 @@
     width: 70%; }
   .shirt_menu {
     flex-direction: row;
-    padding-left: 0; }
+    padding-left: 0;
+    max-height: 30px; }
     .shirt_menu .submenu {
       flex-direction: column;
-      top: -165px;
-      left: 0; }
+      top: -150px;
+      width: 100%;
+      left: -37px; }
       .shirt_menu .submenu li {
         border-right: 3px solid #1F56A9;
-        border-bottom: none; } }
+        border-bottom: none;
+        background-color: white; } }

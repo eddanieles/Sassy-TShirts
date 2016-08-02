@@ -18,6 +18,7 @@ $main-color: #1F56A9;
 
 .shirt_image {
   flex-grow: 10;
+  margin: auto;
   img {
     padding: 20px;
     width: 80%;
@@ -69,6 +70,7 @@ $main-color: #1F56A9;
       border-bottom: 3px solid $main-color;
       &:hover {
         font-size: 150%;
+        background-color: $main-color;
       }
     }
   }
@@ -102,13 +104,16 @@ $main-color: #1F56A9;
   .shirt_menu {
     flex-direction: row;
     padding-left: 0;
+    max-height: 30px;
     .submenu {
       flex-direction: column;
-      top: -165px;
-      left: 0;
+      top: -150px;
+      width: 100%;
+      left: -37px;
       li {
         border-right: 3px solid $main-color;
         border-bottom: none;
+        background-color: white;
       }
     }
   }
