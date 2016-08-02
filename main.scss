@@ -4,6 +4,16 @@ $main-color: #1F56A9;
   border: 3px solid $main-color;
   position: relative;
   display: flex;
+  margin: 10px;
+}
+
+.item {
+  margin: auto;
+}
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .shirt_image {
@@ -16,9 +26,8 @@ $main-color: #1F56A9;
 
 .title_description {
   flex-grow: 7;
-  margin: auto;
   text-align: center;
-  color: $main-color;
+  color: #5EABE7;
 }
 
 .menu {
@@ -55,6 +64,7 @@ $main-color: #1F56A9;
     height: 100%;
     bottom: 20px;
     color: $main-color;
+    background-color: white;
     li {
       border-bottom: 3px solid $main-color;
       &:hover {
@@ -62,4 +72,47 @@ $main-color: #1F56A9;
       }
     }
   }
+}
+
+@media screen and (min-width: 750px) {
+
+  body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    border: 3px solid $main-color;
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    flex: 1 1 0;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 320px;
+  }
+
+  .title_description {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+
+  .shirt_menu {
+    flex-direction: row;
+    padding-left: 0;
+    .submenu {
+      flex-direction: column;
+      top: -165px;
+      left: 0;
+      li {
+        border-right: 3px solid $main-color;
+        border-bottom: none;
+      }
+    }
+  }
+
+
+
 }
