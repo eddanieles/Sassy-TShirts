@@ -14,8 +14,12 @@ img {
   left: 300px; }
 
 .shirt_menu {
+  text-align: right;
+  list-style-type: none;
   display: flex;
   flex-direction: column;
-  border: 1px solid yellow; }
+  border: 1px solid yellow;
+  position: relative; }
   .shirt_menu li {
+    top: 0;
     flex: 1 1 0; }
