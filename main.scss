@@ -35,6 +35,14 @@ $main-color: #1F56A9;
   flex-grow: 1;
 }
 
+.shirt_menu li:first-of-type {
+  border-top: none;
+}
+
+.submenu li:first-of-type {
+  border-top: 3px solid $main-color;
+}
+
 .shirt_menu {
   display: flex;
   flex-direction: column;
@@ -49,7 +57,9 @@ $main-color: #1F56A9;
     border-bottom: none;
     text-align: center;
     padding: 5px;
+    background-color: white;
     &:hover {
+      max-width: 25px;
       color: white;
       background-color: $main-color;
     }
@@ -107,17 +117,25 @@ $main-color: #1F56A9;
     max-height: 30px;
     .submenu {
       flex-direction: column;
-      top: -150px;
+      top: -149px;
       width: 100%;
-      left: -37px;
+      left: -48px;
       li {
         border-right: 3px solid $main-color;
         border-bottom: none;
         background-color: white;
+        width: 100%;
       }
     }
   }
 
+  .shirt_menu li:first-of-type {
+    border-top: 3px solid $main-color;
+    border-left: none;
+  }
 
+  .submenu li:first-of-type {
+    border-left: 3px solid $main-color;
+  }
 
 }

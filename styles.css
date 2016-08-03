@@ -26,6 +26,12 @@
 .menu {
   flex-grow: 1; }
 
+.shirt_menu li:first-of-type {
+  border-top: none; }
+
+.submenu li:first-of-type {
+  border-top: 3px solid #1F56A9; }
+
 .shirt_menu {
   display: flex;
   flex-direction: column;
@@ -39,8 +45,10 @@
     border-right: none;
     border-bottom: none;
     text-align: center;
-    padding: 5px; }
+    padding: 5px;
+    background-color: white; }
     .shirt_menu li:hover {
+      max-width: 25px;
       color: white;
       background-color: #1F56A9; }
     .shirt_menu li:hover .submenu {
@@ -84,10 +92,16 @@
     max-height: 30px; }
     .shirt_menu .submenu {
       flex-direction: column;
-      top: -150px;
+      top: -149px;
       width: 100%;
-      left: -37px; }
+      left: -48px; }
       .shirt_menu .submenu li {
         border-right: 3px solid #1F56A9;
         border-bottom: none;
-        background-color: white; } }
+        background-color: white;
+        width: 100%; }
+  .shirt_menu li:first-of-type {
+    border-top: 3px solid #1F56A9;
+    border-left: none; }
+  .submenu li:first-of-type {
+    border-left: 3px solid #1F56A9; } }
